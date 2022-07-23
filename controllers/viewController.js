@@ -16,7 +16,7 @@ exports.getTour = catchAsync(async (req, res) => {
     fileds: 'review rating user',
   });
   res.status(200).render('tour', {
-    title: 'All tours',
+    title: `${tour.name} Tour`,
     tour,
   });
 });
